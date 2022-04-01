@@ -4,4 +4,20 @@ An Python implementation of a risk assessment and advisory model for Defensive C
 The model is made for my master thesis research project. For verification and validation of the mathematical model, the resulting MINLP is implemented in Python Notebook with a Python 3.7.11 kernel, Pyomo 6.2 as modelling language and SCIP AMPL 7.0.0 as solver.
 
 ## Dependencies
-The solver is the AMPL version of SCIP, which can be downloaded from the SCIP website: https://www.scipopt.org/download.php?fname=scipampl-7.0.0.win.x86_64.intel.opt.spx2.exe.zip. Just put it somewhere and make a reference to the executable when calling the solver. In the notebook this is marked with \[DRIVE AND PATH TO EXECUTABLE]
+There are several dependencies that need to be installed for core functionality. These packages are:
+- pyomo
+- collections
+- math
+- functools
+- operator
+- itertools
+
+Besides these packages a solver is needed. The solver used in this implementation is the AMPL version of SCIP, which can be downloaded from the SCIP website: https://www.scipopt.org/download.php?fname=scipampl-7.0.0.win.x86_64.intel.opt.spx2.exe.zip. Just put it somewhere and make a reference to the executable when calling the solver. In the notebook this is marked with \[DRIVE AND PATH TO EXECUTABLE].
+
+There are also several optional packages. These are needed for visualisation (recommended):
+- matplotlib
+- networkx
+- grandalf. This package is used for the graph layout, but it is not working perfectly for this implementation. So there is still some code for manual placement of nodes.
+
+Finally, a package is used to suppress annoying log warnings. Off course, this is also optional:
+- logging
