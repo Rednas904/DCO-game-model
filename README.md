@@ -1,5 +1,5 @@
 # DCO game model
-A Python implementation of a risk assessment and advisory model for Defensive Cyber Operations. This model is designed to be less reliant on Subject Matter Expert estimations and to offer more concrete and less ambigious options when compared to traditional models such as risk matrix-based ones. The model is a multi-layered network graph representation combined with game and graph-based analysis techniques implemented as a constraint program.
+A Python implementation of a risk assessment and advisory model for Defensive Cyber Operations. This model is designed to be less reliant on Subject Matter Expert estimations and to offer more concrete and less ambigious options when compared to traditional models such as risk matrix-based ones. The model is a multilayered network graph representation combined with game and graph-based analysis techniques implemented as a constraint program.
 
 The model is made for my master thesis research project. For verification and validation of the mathematical model, the resulting MINLP is implemented in Jupyter Notebook with a Python kernel, Pyomo as modelling language and SCIP AMPL as solver.
 
